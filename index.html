@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Livre de Franquia | Reembolso 100% da Franquia do Seguro</title>
     <meta name="description"
-        content="Com o LDF voce recebe 100% da franquia do seguro automotivo de volta em ate 7 dias. Protecao financeira com indenizacao de R$ 20.000 e sorteios mensais." />
+        content="Com o LDF voce recebe 100% da franquia do seguro automotivo de volta em ate 7 dias. Protecao financeira." />
     <meta name="author" content="Livre de Franquia" />
-    <meta name="keywords"
-        content="franquia seguro, reembolso franquia, protecao veicular, seguro carro, livre de franquia, LDF" />
-
     <meta property="og:title" content="Livre de Franquia | Zere a Franquia do Seu Seguro" />
-    <meta property="og:description"
-        content="Reembolso de 100% da franquia em ate 7 dias. Protecao financeira completa para seu veiculo." />
+    <meta property="og:description" content="Reembolso de 100% da franquia em ate 7 dias." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="./assets/og-preview.png" />
-
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Livre de Franquia | Protecao Financeira" />
-    <meta name="twitter:description" content="Nao pague franquia do proprio bolso. Reembolso a vista em ate 7 dias." />
     <meta name="twitter:image" content="./assets/og-preview.png" />
-    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" type="image/png" href="./assets/ldf-logo-color.png" />
     <link rel="canonical" href="https://livredefranquia.com.br" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
     
     <!-- SPA redirect script for GitHub Pages -->
     <script type="text/javascript">
@@ -31,15 +33,27 @@
                 var decoded = l.search.slice(1).split('&').map(function(s) { 
                     return s.replace(/~and~/g, '&')
                 }).join('?');
-                window.history.replaceState(null, null,
-                    l.pathname.slice(0, -1) + decoded + l.hash
-                );
+                window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
             }
         }(window.location))
     </script>
     
     <script type="module" crossorigin src="./assets/index-1C-RxprL.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-CdXhFvLS.css">
+    
+    <style>
+        /* A3. Fix mobile H1 spacing */
+        @media (max-width: 768px) {
+            #root section:first-child {
+                padding-top: 100px !important;
+            }
+        }
+        /* B1. Fix card sublabel visibility */
+        .text-white\/60 {
+            color: rgba(255, 255, 255, 0.8) !important;
+            font-size: 0.95rem !important;
+        }
+    </style>
 </head>
 
 <body>
